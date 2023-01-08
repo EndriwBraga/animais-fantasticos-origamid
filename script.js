@@ -1,0 +1,24 @@
+const tabMenu = document.querySelectorAll('.js-tabmenu li');
+const tabContent = document.querySelectorAll('.js-tabcontent section');
+
+/*verificação de se existe o conteudo na pagina */
+
+if(tabMenu.length){
+  tabContent[0].classList.add('ativo')
+}
+
+/* adicionar a classe 'ativo' no meu CSS */
+
+function activeTab(index) {
+  tabContent.forEach((section) => {
+    section.classList.remove('ativo');
+  });
+  tabContent[index].classList.add('ativo');
+}
+
+tabMenu.forEach((itemMenu, index) => {
+  itemMenu.addEventListener('click', () =>{
+    activeTab(index);
+  })
+})
+
