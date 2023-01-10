@@ -74,9 +74,6 @@ linksInternos.forEach((link) => {
 
 initScrollSuave();
 
-
-
-
 /* Animação scroll pag dela vir da esquerda p direita (mais ou menos isso) */
 
 function initAnimacaoScrollpag(){
