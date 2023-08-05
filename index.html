@@ -10,7 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-  <nav class="menu js-menu">
+  <nav class="menu" data-menu="suave">
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
@@ -18,9 +18,9 @@
       <li><a href="https://www.origamid.com/">Dev →</a></li>
     </ul>
   </nav>
-  <section class="grid-section animais js-scroll" id="animais">
+  <section class="grid-section animais" data-anime="scroll" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul class="animais-lista js-tabmenu">
+    <ul class="animais-lista" data-tab="menu">
       <li>
         <img src="img/imagem1.jpg">
       </li>
@@ -40,8 +40,8 @@
         <img src="img/imagem6.jpg">
       </li>
     </ul>
-    <div class="animais-descricao js-tabcontent">
-      <section>
+    <div class="animais-descricao" data-tab="content">
+      <section data-anime="show-right">
         <h2>Raposa</h2>
         <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados
           por um focinho comprido e uma cauda longa e peluda.</p>
@@ -51,7 +51,7 @@
         <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
       </section>
       
-      <section>
+      <section data-anime="show-right">
         <h2>Esquilo</h2>
         <p>O seu tamanho varia muito, desde os pequenos esquilos Myosciurus pumilio, que têm de 7 a 10 cm de comprimento, às grandes marmotas da espécie 
           Marmota marmota, que têm de 53 a 73 cm de comprimento (com a cauda).</p>
@@ -65,7 +65,7 @@
           e, como não necessitam se equilibrar, a cauda é mais curta.</p>
       </section>
 
-      <section>
+      <section data-anime="show-down">
         <h2>Urso</h2>
         <p>Algumas características comuns dos ursos são pelagem espessa, rabo curto, o olfato desenvolvido e as garras não retráteis.</p>
         <p>As espécies mais antigas e primitivas desta família estão reunidas no gênero Ballusia, do Mioceno Inferior, 
@@ -76,7 +76,7 @@
           Sri Lanka gosta de viver em regiões mais quentes.</p>
       </section>
 
-      <section>
+      <section data-anime="show-down">
         <h2>Lobo</h2>
         <p>O lobo (também chamado de lobo-cinzento; nome científico: Canis lupus) é uma espécie de mamífero canídeo do gênero Canis. 
             É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás. </p>
@@ -88,7 +88,7 @@
             como previsto pela teoria de Christian Bergmann.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right"> 
         <h2>Macaco</h2>
         <p>Alguns são arbóreos (vivendo em árvores), enquanto outros vivem na savana;</p>
         <p>As dietas diferem entre as várias espécies, mas podem conter qualquer um dos seguintes alimentos: frutas, 
@@ -99,7 +99,7 @@
             dicromáticos ou - como nos macacos-coruja e grandes galagos - monocromáticos.</p>
       </section>
 
-      <section>
+      <section data-anime="show-right">
         <h2>Leão</h2>
         <p>O leão é uma espécie de mamífero carnívoro do gênero Panthera e da família Felidae.</p>
         <p> A espécie é atualmente encontrada na África subsaariana e na Ásia, com uma única 
@@ -111,9 +111,9 @@
     </div>
   </section>
 
-  <section class="grid-section faq js-accordion js-scroll" id="faq">
+  <section class="grid-section faq" data-anime="scroll" id="faq">
     <h1 class="titulo">FAQ</h1>
-    <dl class="faq-lista">
+    <dl class="faq-lista" data-anime="accordion">
       <dt>O que é um animal silvestre?</dt>
       <dd>Animais silvestres são os passarinhos, papagaios, corujas, cobras, jabutis, sapos, peixes, macacos, tamanduás, onças e tantos outros que 
         vivem na natureza ou foram retirados da natureza a poucas gerações. 
@@ -132,7 +132,7 @@
     </dl>
   </section>
 
-  <section class="grid-section contato js-scroll" id="contato">
+  <section class="grid-section contato" data-anime="scroll" id="contato">
     <h1 class="titulo">Contato</h1>
     <div class="mapa">
       <img src="img/mapa.png">
