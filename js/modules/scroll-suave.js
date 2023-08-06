@@ -4,6 +4,7 @@ export default function initScrollSuave(){
     function scrollToSection(event) {
       event.preventDefault();
       const href = event.currentTarget.getAttribute('href');
+      
       const section = document.querySelector(href);
       const topo = section.offsetTop;
   
