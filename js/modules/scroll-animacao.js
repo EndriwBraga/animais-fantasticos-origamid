@@ -1,8 +1,8 @@
 export default function initAnimacaoScrollpag(){
-    const sections = document.querySelectorAll('[data-scroll="scroll"]');
+    const sections = document.querySelectorAll('[data-anime="scroll"]');
     
     if(sections.length){
-      const windowMetade = window.innerHeight * 0.5;
+      const windowMetade = window.innerHeight * 0.6;
     
       function animaScroll(){
         sections.forEach((section) => {
@@ -11,13 +11,14 @@ export default function initAnimacaoScrollpag(){
     
           if(isSectionVisible) 
               section.classList.add('ativo');
-          else 
+          else if  (section.classList.contains('ativo')){
               section.classList.remove('ativo')
+            }
         })
       }
     
     animaScroll();
     
     window.addEventListener('scroll', animaScroll);
-      }
+    }
 }
