@@ -1,6 +1,6 @@
 export default class ScrollAnima {
   constructor(sections) {
-    this.sections = document.querySelectorAll('[data-anime="scroll"]');
+    this.sections = document.querySelectorAll(sections);
     this.windowMetade = window.innerHeight * 0.6;
 
     this.checkDistance = this.checkDistance.bind(this);
