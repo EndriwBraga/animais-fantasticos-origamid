@@ -33,7 +33,11 @@
           </li>
           <li><a href="#faq">Faq</a></li>
           <li><a href="#contato">Contato</a></li>
-          <li><a data-modal="abrir" href="login.html">Login →</a></li>
+          <li>
+            <a data-modal="abrir" href="login.html"
+              >Login <span class="arrow-black"></span
+            ></a>
+          </li>
         </ul>
       </nav>
       <section class="grid-section animais" data-anime="scroll" id="animais">
@@ -252,6 +256,27 @@
         </dl>
       </section>
 
+      <section class="grid-section galeria" data-anime="scroll">
+        <ul class="custom-controls">
+          <li><img src="img/slide/foto1-thumb.jpg" /></li>
+          <li><img src="img/slide/foto2-thumb.jpg" /></li>
+          <li><img src="img/slide/foto3-thumb.jpg" /></li>
+          <li><img src="img/slide/foto4-thumb.jpg" /></li>
+          <li><img src="img/slide/foto5-thumb.jpg" /></li>
+          <li><img src="img/slide/foto6-thumb.jpg" /></li>
+        </ul>
+        <div class="slide-wrapper">
+          <ul class="slide">
+            <li><img src="img/slide/foto1.jpg" alt="foto1" /></li>
+            <li><img src="img/slide/foto2.jpg" alt="foto2" /></li>
+            <li><img src="img/slide/foto3.jpg" alt="foto3" /></li>
+            <li><img src="img/slide/foto4.jpg" alt="foto4" /></li>
+            <li><img src="img/slide/foto5.jpg" alt="foto5" /></li>
+            <li><img src="img/slide/foto6.jpg" alt="foto6" /></li>
+          </ul>
+        </div>
+      </section>
+
       <section class="grid-section numeros" data-anime="scroll">
         <h1 class="titulo">Números</h1>
         <div class="numeros-grid"></div>
@@ -268,9 +293,9 @@
         </div>
         <ul class="dados">
           <li>endriwbragalisboa@gmail.com</li>
-          <li>+55 (53) 999 25 05 27</li>
-          <li>Barão do Rio Branco, nº 1</li>
-          <li>Santa Vitoria do Palmar - RS</li>
+          <li>+55 (53) 997 105 220</li>
+          <li>Manuel Lucas de Oliveira, nº 1</li>
+          <li>Pelotas / Rio Grande do Sul</li>
           <li>
             Doe <span class="btc-preco">0</span> bitcoin para nos ajudar a
             ajudar os animaizinhos!
@@ -288,7 +313,7 @@
 
     <section class="modal-container" data-modal="container">
       <div class="modal">
-        <button data-modal="fechar" class="fechar">X</button>
+        <button data-modal="fechar" class="fechar"></button>
         <form action="">
           <label for="email">Email</label>
           <input type="text" form="email" id="email" />
